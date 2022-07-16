@@ -34,6 +34,18 @@ You require PHP 8.1 to run Thoth or you can use our [docker compose](https://git
 
 ## 🛠 Installing <a name = "installing"></a>
 
+If you use a our docker-composer file <b>make sure</b> add crontab service to docker compose service for laravel cronjob
+
+```
+  crontab:
+    image: herdanis/herdanis/php8.1-alpine-cronjob:1.0
+    container_name: crontabReport
+    volumes:
+      - ./app:/var/www/html
+    networks:
+      - local
+```
+
 ## 🎈 Usage <a name="usage"></a>
 
 ## 🚀 Deployment <a name = "deployment"></a>
