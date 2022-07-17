@@ -11,7 +11,7 @@ class dashboardController extends Controller
     {
         if ($request->logout) {
             Auth::logout();
-            return redirect()->route('login');
+            return redirect()->route('public_login');
         }
         return redirect()->back();
     }

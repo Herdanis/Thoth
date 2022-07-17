@@ -15,3 +15,5 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', [publicController::class, 'index']);
+
+Route::get('/login', [publicController::class, 'login'])->name('public_login');

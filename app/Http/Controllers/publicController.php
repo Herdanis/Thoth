@@ -9,7 +9,7 @@ class publicController extends Controller
 {
     public function index()
     {
-        return redirect()->route('login');
+        return redirect()->route('public_login');
     }
 
     public function login()
