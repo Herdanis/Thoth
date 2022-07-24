@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('domain_reports', function (Blueprint $table) {
             $table->id();
+            $table->integer('domain_id'); // error about domain will be save here to send a report
             $table->timestamps();
         });
     }

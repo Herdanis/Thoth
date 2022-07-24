@@ -15,6 +15,7 @@ return new class extends Migration
     {
         Schema::create('instance_reports', function (Blueprint $table) {
             $table->id();
+            $table->integer('instance_id'); // error about instance will be save here to send a report
             $table->timestamps();
         });
     }

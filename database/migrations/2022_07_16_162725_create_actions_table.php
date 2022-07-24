@@ -15,6 +15,8 @@ return new class extends Migration
     {
         Schema::create('actions', function (Blueprint $table) {
             $table->id();
+            $table->string("action_name"); // action you want name
+            $table->boolean("check"); // if this is true its mean thoth will check every minutes
             $table->timestamps();
         });
     }
